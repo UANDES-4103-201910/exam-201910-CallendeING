@@ -43,22 +43,15 @@
           <a class="navbar-brand" href="/">Z-Mobile</a>
         </div>
 
-        <% if user_signed_in? %>
-        <ul class="navbar-header">
-          <a class="navbar-brand" href="/walls">Wall</a>
-        </ul>
-        <% end %>
-        <% if user_signed_in? %>
-        <ul class="navbar-header">
-            <a class="navbar-brand" href="/posts/new">New Post</a>
-        </ul>
-        <% end %>
 
         <ul class="navbar-header navbar-right">
           <% if user_signed_in? %>
+            <a class="navbar-brand" href="/shopping_cart">My cart</a>
+            <a class="navbar-brand"></a>
             <a><%= link_to(current_user.email, edit_user_registration_path ,class: "navbar-brand") %></a>
+            <a class="navbar-brand"></a>
             <a><%= link_to('Logout', destroy_user_session_path, method: :delete , class: "navbar-brand") %></a>
-
+            
           <% else %>
             <a class="navbar-brand" href="/users/sign_in">Sign In</a>
             <a class="navbar-brand" >/</a>
@@ -74,23 +67,19 @@
           <a class="navbar-brand" href="/">Z-Mobile</a>
         </div>
 
-        <% if user_signed_in? %>
-        <ul class="navbar-header">
-          <a class="navbar-brand" href="/walls">Wall</a>
-        </ul>
-        <% end %>
-        <% if user_signed_in? %>
-        <ul class="navbar-header">
-            <a class="navbar-brand" href="/posts/new">New Post</a>
-        </ul>
-        <% end %>
+
+
 
         <ul class="navbar-header navbar-right">
           <% if user_signed_in? %>
+            <a class="navbar-brand" href="/shopping_cart">My cart</a>
+            <a class="navbar-brand"></a>
             <a><%= link_to(current_user.email, edit_user_registration_path ,class: "navbar-brand") %></a>
+            <a class="navbar-brand"></a>
             <a><%= link_to('Logout', destroy_user_session_path, method: :delete , class: "navbar-brand") %></a>
-
+            
           <% else %>
+
             <a class="navbar-brand" href="/users/sign_in">Sign In</a>
             <a class="navbar-brand" >/</a>
             <a class="navbar-brand" href="/users/sign_up">Sign Up</a>
@@ -115,14 +104,34 @@
       <%= flash[:alert] %>
     </div>
   <% end %>
+  
+  <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
 
-<div class="vertical-menu">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
+                <div class="vertical-menu">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-8 main-content">
+            <%= yield %>
+        </div>
+    </div>
+<div id="cuerpo">
+
+
+  
 </div>
-    
+<div>
+
+
+</div>
+</div>
+
+
 
 
     
@@ -144,6 +153,5 @@
   <!-- Copyright -->
 
   </body>
-  <%= yield %>
 </html>
 

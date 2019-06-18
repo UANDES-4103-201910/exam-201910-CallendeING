@@ -6,7 +6,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :variant
       t.string :price
       t.string :shortDescription
-      t.string :type
+      t.string :pType
       t.string :longDescription
       t.references :order, foreign_key: true
 

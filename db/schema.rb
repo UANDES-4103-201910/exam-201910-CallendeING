@@ -27,8 +27,10 @@ ActiveRecord::Schema.define(version: 2019_06_18_141035) do
 
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "address_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["address_id"], name: "index_orders_on_address_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -38,7 +40,7 @@ ActiveRecord::Schema.define(version: 2019_06_18_141035) do
     t.string "variant"
     t.string "price"
     t.string "shortDescription"
-    t.string "type"
+    t.string "pType"
     t.string "longDescription"
     t.integer "order_id"
     t.datetime "created_at", null: false
