@@ -1,2 +1,32 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<% title "Home" %>
+<p id="notice"><%= notice %></p>
+
+<h1 class="title">Home</h1>
+
+<table>
+
+<% @products = Product.all %>
+  <hr/>
+      <% @products.each do |product| %>
+          <div class="col-md-6">
+        <div class="well well-sm">
+            <div class="row">
+                <div class="col-xs-3 col-md-3 text-center">
+
+                  <img class="img-responsive user-photo" src="http://cdn.onlinewebfonts.com/svg/img_237724.png" style= 'width:100px'>
+
+                </div>
+                <div class="col-xs-9 col-md-9 section-box">
+                        <a  href="/products/<%= product.id %>" > <h2><%= product.brand%></h2> </a>
+                        <p><%= product.model%></p>
+                        <p><%= product.shortDescription%></p>
+                    <hr />
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>
+
+<br>
+
