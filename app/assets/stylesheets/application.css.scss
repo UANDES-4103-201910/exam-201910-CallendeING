@@ -1,0 +1,406 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ input[type=text], select {
+    width: 100%;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+   
+   
+   
+   
+    .cuadros {
+        background-color:#FBF5EF;
+        margin-top: 10%;
+        margin: auto;
+        width: 90%;
+        left: 50%;
+        border: 2px solid #F78181;
+        padding: 20px;
+        display: flex;
+        border-radius: 10px;
+      }
+      .cuadrosSign{
+        float: right;
+   
+      }
+      .cuadrosLogin{
+        float: left;
+        margin-right: 20px;
+      }
+      .lineaInUp{
+        background-color:#F78181;
+        float: left;
+        margin-right: 20px;
+      }
+      .loginBtn{
+        margin-top: 5%;
+        width: fit-content ;
+        position: relative;
+      }
+      .user-row {
+        margin-bottom: 14px;
+    }
+   
+    .panel {
+      border-color: #ff4900!important;
+    }
+    .panel-heading {
+      border-color: #ff4900!important;
+      background-color: #ffd9b3!important;
+      color: #ff4900!important;
+    }
+   
+    .btn-primary{
+      width: 100%;
+      margin-top: 0%;
+      width: fit-content ;
+      position: relative;
+      border-color: #ff4900!important;
+      background-color: #ffd9b3!important;
+      color: #ff4900!important;
+    }
+   
+    .user-row:last-child {
+        margin-bottom: 0;
+    }
+   
+    .dropdown-user {
+        margin: 13px 0;
+        padding: 5px;
+        height: 100%;
+    }
+   
+    .dropdown-user:hover {
+        cursor: pointer;
+    }
+   
+    .table-user-information > tbody > tr {
+        border-top: 1px solid rgb(221, 221, 221);
+    }
+   
+    .table-user-information > tbody > tr:first-child {
+        border-top: 0;
+    }
+   
+   
+    .table-user-information > tbody > tr > td {
+        border-top: 0;
+    }
+    .toppad {
+      margin-top:20px;
+    }
+    //
+   
+   
+    //NEW
+   
+    body, html{
+         background-repeat: no-repeat;
+         font-family: 'Oxygen', sans-serif;
+    }
+   
+    .main{
+      margin-top: 70px;
+      border-bottom: 70px;
+    }
+   
+    h1.title {
+        font-size: 50px;
+        font-family: 'Passion One', cursive;
+        font-weight: 400;
+      text-align: center;
+    }
+   
+    hr{
+        width: 10%;
+        color: #fff;
+    }
+   
+    .form-group{
+      width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+        }
+   
+    label{
+        margin-bottom: 15px;
+    }
+   
+    input,
+    input::-webkit-input-placeholder {
+        font-size: 11px;
+        padding-top: 3px;
+    }
+   
+    .main-login{
+         background-color: #fff;
+        /* shadows and rounded borders */
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+   
+    }
+   
+    .main-center{
+         margin-top: 15px;
+         max-width: 70%px;
+      padding: 40px 40px;
+   
+    }
+   
+    .login-button{
+        margin-top: 5px;
+    }
+   
+    .login-register{
+        font-size: 11px;
+        text-align: center;
+    }
+   
+   
+   
+    .navbar {
+      background-color: #ffffff;
+    }
+    .navbar .navbar-brand {
+      color: #ff9970;
+    }
+    .navbar .navbar-brand:hover,
+    .navbar .navbar-brand:focus {
+      color: #ff4900;
+    }
+    .navbar .navbar-text {
+      color: #ff9970;
+    }
+    .navbar .navbar-text a {
+      color: #ff4900;
+    }
+    .navbar .navbar-text a:hover,
+    .navbar .navbar-text a:focus {
+      color: #ff4900;
+    }
+    .navbar .navbar-nav .nav-link {
+      color: #ff9970;
+      border-radius: .25rem;
+      margin: 0 0.25em;
+    }
+    .navbar .navbar-nav .nav-link:not(.disabled):hover,
+    .navbar .navbar-nav .nav-link:not(.disabled):focus {
+      color: #ff4900;
+    }
+    .navbar .navbar-nav .nav-item.active .nav-link,
+    .navbar .navbar-nav .nav-item.active .nav-link:hover,
+    .navbar .navbar-nav .nav-item.active .nav-link:focus,
+    .navbar .navbar-nav .nav-item.show .nav-link,
+    .navbar .navbar-nav .nav-item.show .nav-link:hover,
+    .navbar .navbar-nav .nav-item.show .nav-link:focus {
+      color: #ff4900;
+      background-color: #dedede;
+    }
+    .navbar .navbar-toggle {
+      border-color: #dedede;
+    }
+    .navbar .navbar-toggle:hover,
+    .navbar .navbar-toggle:focus {
+      background-color: #dedede;
+    }
+    .navbar .navbar-toggle .navbar-toggler-icon {
+      color: #ff9970;
+    }
+    .navbar .navbar-collapse,
+    .navbar .navbar-form {
+      border-color: #ff9970;
+    }
+    .navbar .navbar-link {
+      color: #ff9970;
+    }
+    .navbar .navbar-link:hover {
+      color: #ff4900;
+    }
+   
+    @media (max-width: 575px) {
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ff9970;
+      }
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ff4900;
+      }
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ff4900;
+        background-color: #dedede;
+      }
+    }
+   
+    @media (max-width: 767px) {
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ff9970;
+      }
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ff4900;
+      }
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ff4900;
+        background-color: #dedede;
+      }
+    }
+   
+    @media (max-width: 991px) {
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ff9970;
+      }
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ff4900;
+      }
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ff4900;
+        background-color: #dedede;
+      }
+    }
+   
+    @media (max-width: 1199px) {
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ff9970;
+      }
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ff4900;
+      }
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ff4900;
+        background-color: #dedede;
+      }
+    }
+   
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #ff9970;
+    }
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ff4900;
+    }
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ff4900;
+      background-color: #dedede;
+    }
+   
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+   
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: #ff8873;
+      padding: 14px 16px;
+      background-color: white;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+   
+   
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ff9911;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+   
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #ffeeee;
+    }.dropdown-content a:hover {
+      background-color: #ddd;
+    }
+   
+   
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+   
+    input[type=email], input[type=password],input[type=text], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+   
+   
+    input[type=submit] {
+      width: 50%;
+      background-color: #ff9970;
+      color: #ff4900;
+      border-style: solid;
+      border-color: #ff4900;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border-radius: 4px;
+      text-align:center;
+      align-self: center;
+      cursor: pointer;
+    }
+   
+    input[type=submit]:hover {
+      background-color: #ff4900;
+      color: #9e1000;
+    }
+   
+    .field, .actions{
+      margin:20px 0px; padding:0px;
+      text-align:center;
+      align-self: center;
+    }
+    .fieldName{
+      text-align:left;
+    }
+   
+    textarea {
+     width: 50%;
+     height: 150px;
+   }
