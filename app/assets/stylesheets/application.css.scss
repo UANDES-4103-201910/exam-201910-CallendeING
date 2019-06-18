@@ -16,6 +16,29 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+
+ .vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #fff;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: #ff4900;
+}
+
+.vertical-menu a:hover {
+  background-color: #F78181;
+}
+
+.vertical-menu a.active {
+  background-color: #ff4900;
+  color: white;
+}
+
  input[type=text], select {
     width: 100%;
     padding: 12px 30px;
