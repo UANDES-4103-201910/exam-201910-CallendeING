@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_18_133105) do
+ActiveRecord::Schema.define(version: 2019_06_18_141035) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.integer "phone"
+    t.string "addressL1"
+    t.string "addressL2"
+    t.string "city"
+    t.string "country"
+    t.integer "zipCode"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_addresses_on_user_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "brand"
@@ -18,9 +38,12 @@ ActiveRecord::Schema.define(version: 2019_06_18_133105) do
     t.string "variant"
     t.string "price"
     t.string "shortDescription"
+    t.string "type"
     t.string "longDescription"
+    t.integer "order_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_products_on_order_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -29,6 +52,8 @@ ActiveRecord::Schema.define(version: 2019_06_18_133105) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "fName"
+    t.string "lName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
